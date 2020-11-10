@@ -75,7 +75,7 @@
     "meal": "BREAKFAST",
     "diet": "MACRONUTRIENT",
     "servings": 8,
-    "calories": 6000,
+    "calories": 7000,
     "ingredients":[],
     "instructions":[]
   },
@@ -85,7 +85,7 @@
     "meal": "BREAKFAST",
     "diet": "MACRONUTRIENT",
     "servings": 9,
-    "calories": 4500,
+    "calories": 10000,
     "ingredients":[],
     "instructions":[]
   },
@@ -95,7 +95,7 @@
     "meal": "BREAKFAST",
     "diet": "MACRONUTRIENT",
     "servings": 10,
-    "calories": 7000,
+    "calories": 14000,
     "ingredients":[],
     "instructions":[]
   },
@@ -125,7 +125,7 @@
     "meal": "BREAKFAST",
     "diet": "GENERAL HEALTHFUL",
     "servings": 3,
-    "calories": 1400,
+    "calories": 1200,
     "ingredients":[],
     "instructions":[]
   },
@@ -135,7 +135,7 @@
     "meal": "BREAKFAST",
     "diet": "GENERAL HEALTHFUL",
     "servings": 4,
-    "calories": 2100,
+    "calories": 1600,
     "ingredients":[],
     "instructions":[]
   },
@@ -145,7 +145,7 @@
     "meal": "BREAKFAST",
     "diet": "GENERAL HEALTHFUL",
     "servings": 5,
-    "calories": 1600,
+    "calories": 2000,
     "ingredients":[],
     "instructions":[]
   },
@@ -155,7 +155,7 @@
     "meal": "BREAKFAST",
     "diet": "GENERAL HEALTHFUL",
     "servings": 6,
-    "calories": 3400,
+    "calories": 2450,
     "ingredients":[],
     "instructions":[]
   },
@@ -165,7 +165,7 @@
     "meal": "BREAKFAST",
     "diet": "GENERAL HEALTHFUL",
     "servings": 7,
-    "calories": 3800,
+    "calories": 3200,
     "ingredients":[],
     "instructions":[]
   },
@@ -175,7 +175,7 @@
     "meal": "BREAKFAST",
     "diet": "GENERAL HEALTHFUL",
     "servings": 8,
-    "calories": 3200,
+    "calories": 3800,
     "ingredients":[],
     "instructions":[]
   },
@@ -185,7 +185,7 @@
     "meal": "BREAKFAST",
     "diet": "GENERAL HEALTHFUL",
     "servings": 9,
-    "calories": 2700,
+    "calories": 4000,
     "ingredients":[],
     "instructions":[]
   },

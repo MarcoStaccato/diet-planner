@@ -30,6 +30,8 @@ public class DietPlanServiceImpl implements DietPlanService {
         Collections.reverse(planList);
         List<Set<Recipe>> result = new LinkedList<>();
 
+        int score = recipeService.score(planList.get(0).getRecipes(), userPreference);
+
         if(userPreference.getNumDays() > planList.size()) {
             throw new IllegalStateException("No plans found");
         }

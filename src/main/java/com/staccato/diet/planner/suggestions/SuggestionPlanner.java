@@ -8,6 +8,9 @@ import com.staccato.diet.planner.user.UserPreference;
 
 import java.util.*;
 
+/**
+ * Builds cartesian products filtering by calories
+ */
 public class SuggestionPlanner {
 
     public static int BOUND = 500;

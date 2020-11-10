@@ -31,7 +31,7 @@ public class PlannerTest {
 
     public UserPreference getBasicUserPreference() {
         UserPreference userPreference = new UserPreference();
-        userPreference.setDailyCaloricNeed(2000);
+        userPreference.setDailyCaloricNeed(2500);
         userPreference.setHouseholdSize(2);
         userPreference.setDiet(DietEnum.GENERAL_HEALTHFUL);
         userPreference.setNumDays(3);

@@ -4,6 +4,9 @@ import com.staccato.diet.planner.recipe.model.Recipe;
 
 import java.util.Set;
 
+/**
+ * Holds all demo recipes on memory
+ */
 public enum RecipeSingleton {
 
     INSTANCE;

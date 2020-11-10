@@ -10,6 +10,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Recipe Filters
+ */
 @Log4j2
 public class RecipeFilter {
 

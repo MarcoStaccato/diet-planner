@@ -12,7 +12,7 @@ import java.util.Set;
 public class RecipeServiceImpl implements RecipeService {
 
     public final int HIGH_SCORE = 10000;
-    public final int EXTRA_SERVINGS = 500;
+    public final int EXTRA_SERVINGS = 600;
 
     @Override
     public Set<Recipe> findAll() {
@@ -31,8 +31,7 @@ public class RecipeServiceImpl implements RecipeService {
         int servingCaloriesPerSet = 0;
 
         for(Recipe recipe : recipes) {
-            recipeServings = recipe.getServings();
-            recipeServings += recipeServings;
+            recipeServings += recipe.getServings();
             servingCaloriesPerSet += recipe.getCalories()/recipeServings;
         }
 
