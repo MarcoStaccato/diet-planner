@@ -11,6 +11,9 @@ import java.util.Set;
 @Log4j2
 public class RecipeServiceImpl implements RecipeService {
 
+    public final int HIGH_SCORE = 10000;
+    public final int EXTRA_SERVINGS = 500;
+
     @Override
     public Set<Recipe> findAll() {
         return RecipeSingleton.INSTANCE.getRecipes();
@@ -18,6 +21,30 @@ public class RecipeServiceImpl implements RecipeService {
 
     @Override
     public int score(Set<Recipe> recipes, UserPreference userPreferences) {
-        return 0;
+        int breakfastServings = userPreferences.getHouseholdSize() * userPreferences.getNumBreakfast();
+        int lunchServings = userPreferences.getHouseholdSize() * userPreferences.getNumLunch();
+        int dinnerServings = userPreferences.getHouseholdSize() * userPreferences.getNumDinner();
+
+        int totalRequestedServings = breakfastServings + lunchServings + dinnerServings;
+
+        int recipeServings = 0;
+        int servingCaloriesPerSet = 0;
+
+        for(Recipe recipe : recipes) {
+            recipeServings = recipe.getServings();
+            recipeServings += recipeServings;
+            servingCaloriesPerSet += recipe.getCalories()/recipeServings;
+        }
+
+        int extraServings = recipeServings - totalRequestedServings;
+
+        int extraOrMissingCalories = Math.abs(userPreferences.getDailyCaloricNeed() - servingCaloriesPerSet);
+
+        int score = HIGH_SCORE - (extraServings * EXTRA_SERVINGS);
+
+        score = score - extraOrMissingCalories;
+
+        return score;
     }
+
 }
